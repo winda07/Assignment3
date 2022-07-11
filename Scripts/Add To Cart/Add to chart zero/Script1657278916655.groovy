@@ -26,7 +26,7 @@ Mobile.tap(findTestObject('Add To Cart/btn_text_samsung_galaxy'), 0)
 
 Mobile.tap(findTestObject('Add To Cart/btn_add_to_chart'), 0)
 
-Mobile.setText(findTestObject('Add To Cart/set_number_of_order'), '2', 0)
+Mobile.setText(findTestObject('Add To Cart/set_number_of_order'), '0', 0)
 
 Mobile.tap(findTestObject('Add To Cart/btn_add'), 0)
 
@@ -39,4 +39,6 @@ println('Toast element: ' + toast)
 if (toast == null) {
     KeywordUtil.markFailed('ERROR: Toast object not found!')
 }
+
+Mobile.closeApplication()
 
